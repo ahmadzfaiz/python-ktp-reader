@@ -111,11 +111,12 @@ while True:
     break
 
   elif event == 'Verifikasi Input':
-    if values['input_folder'] == '':
-      sg.popup('Url tidak valid')
-    else:
+    if values['input_folder'] != '' and values['output_folder'] != '':
       sg.popup('Url valid')
       window['Baca KTP'].update(disabled=False)
+    else:
+      sg.popup('Url tidak valid')
+      window['Baca KTP'].update(disabled=True)
   
   elif event == 'Baca KTP':
     input_files = [f'{input_url}/{file}' for file in os.listdir(input_url)]

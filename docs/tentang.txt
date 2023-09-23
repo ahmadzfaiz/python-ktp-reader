@@ -1,5 +1,10 @@
-KTP Reader adalah proyek ujicoba penerapan algoritma Python untuk membaca data yang ada di KTP yang dibuat oleh Ahmad Zaenun Faiz. Aplikasi ini menggunakan beberapa framework sebagai berikut:
+KTP Reader adalah proyek ujicoba penerapan algoritma Python untuk membaca data yang ada di KTP yang dibuat oleh Ahmad Zaenun Faiz. Aplikasi ini bersifat open-source dan dibuat menggunakan framework sebagai berikut:
+1. easyocr -- untuk membaca text dari image
+2. PySimpleGUI -- untuk membuat menu PySimpleGUI
+3. pyinstaller -- untuk packaging sebagai aplikasi executable Windows
 
+Detail framework yang digunakan:
+altgraph==0.17.3
 certifi==2023.7.22
 charset-normalizer==3.2.0
 easyocr==1.7.1
@@ -15,11 +20,15 @@ ninja==1.11.1
 numpy==1.25.2
 opencv-python-headless==4.8.0.76
 packaging==23.1
+pefile==2023.2.7
 Pillow==10.0.0
 pyclipper==1.3.0.post5
+pyinstaller==6.0.0
+pyinstaller-hooks-contrib==2023.8
 PySimpleGUI==4.60.5
 python-bidi==0.4.2
 PyWavelets==1.4.1
+pywin32-ctypes==0.2.2
 PyYAML==6.0.1
 requests==2.31.0
 scikit-image==0.21.0
